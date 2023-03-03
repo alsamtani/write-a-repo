@@ -16,7 +16,7 @@ Open the script and change the file path to where you want your new repo located
     - code (intermediate tibbles)
   * Code
     - rmd
-      -.Rmd
+      - .Rmd
     - source_scripts
-      -.R
-      -.R
+      - .R
+      - .R
