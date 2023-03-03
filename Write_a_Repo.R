@@ -10,13 +10,13 @@ repo_path <- "/Users/anyasamtani"
 #setwd
 setwd(repo_path)
 
-#create repo folder
+#create repo folder and set wd
 repo_name <- "mynewrepo"
 dir.create(repo_name) 
+setwd(repo_name)
 
 
 #Data Sub Folder
-setwd(repo_name)
 dir.create("data/images", recursive = T)
 
 #Output Sub Folder
