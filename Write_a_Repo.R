@@ -1,6 +1,10 @@
 
 #CHOOSE LOCATION OF REPO!
-repo_path <- "/Users/anyasamtani"
+repo_path <- "/Users/anyasamtani" #change to customize
+repo_name <- "test-repo" #change to customize
+
+
+
 
 
 
@@ -10,21 +14,25 @@ repo_path <- "/Users/anyasamtani"
 #setwd
 setwd(repo_path)
 
-#create repo folder and set wd
-repo_name <- "mynewrepo"
+#create repo folder
 dir.create(repo_name) 
-setwd(repo_name)
-
 
 #Data Sub Folder
-dir.create("data/images", recursive = T)
-
-#Output Sub Folder
-dir.create(here::here("ouput/figures"), recursive = T)
-dir.create(here::here("ouput/data"),  recursive = T)
-dir.create(here::here("ouput/code"),  recursive = T)
+dir.create(paste(repo_name, "/data/images", sep = ""), recursive = T)
 
 
 #Code Sub Folder
-dir.create(here::here("code/rmd"),  recursive = T)
-dir.create(here::here("code/source_scripts"),  recursive = T)
+dir.create(paste(repo_name,"/code/rmd", sept = ""),  recursive = T)
+dir.create(paste(repo_name,"/code/source_scripts", sep = ""),  recursive = T)
+
+
+#Output Sub Folder
+dir.create(paste(repo_name, "/output/figures", sep = ""), recursive = T)
+dir.create(paste(repo_name, "/output/data", sep = ""),  recursive = T)
+dir.create(paste(repo_name, "/output/code", sep = ""),  recursive = T)
+
+
+
+
+#dir.create(paste(repo_name, "/lorem/ipsum", sep = ""), recursive = T)
+
